@@ -1,0 +1,28 @@
+{
+  "name": "scrape-with-josch",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node ./src/index.ts",
+    "pdf": "ts-node ./src/pdf-parse.ts",
+    "meta": "ts-node ./src/metagetter.ts",
+    "main": "ts-node ./src/main.ts",
+    "body": "ts-node ./src/getBody.ts",
+    "main2": "ts-node ./src/mainTwice.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.0",
+    "@types/pdf-parse": "^1.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "@types/uuid": "^9.0.2",
+    "csv-writer": "^1.6.0",
+    "deno": "^0.1.1",
+    "pdf-parse": "^1.1.1",
+    "puppeteer": "^20.5.0",
+    "uuid": "^9.0.0"
+  }
+}
